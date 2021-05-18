@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+    
+}
+
+.flex {
+    display: flex;
+}
+
+.preProgressContainer {
+    flex-direction: row;
+    height: 300px;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.preProgressContainer .preProgress {
+    background-color: blanchedalmond;
+    border-width: 2px;
+    border-style: solid;
+    border-color: teal;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    padding: 10px;
+    margin: 10px;
+    position: relative;
+    transition: border 1s ease-in;
+}
+
+.preProgressContainer .preProgress:nth-of-type(2) {
+    background-color: violet;
+    transform: translateY(30px);
+    transition:  1s ease-in; 
+}
+
+.preProgressContainer .preProgress .textContent {
+    color:tomato;
+    position: absolute;
+    top: 35%;
+    left:20%;
+}
+
